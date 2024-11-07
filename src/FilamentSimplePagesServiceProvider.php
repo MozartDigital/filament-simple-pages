@@ -20,6 +20,7 @@ class FilamentSimplePagesServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package->name(static::$name)
+            ->hasConfigFile(['filamentpages'])
             ->hasViews()
             ->hasInstallCommand(function(InstallCommand $command) {
                 $command
