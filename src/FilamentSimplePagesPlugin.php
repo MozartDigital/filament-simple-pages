@@ -17,8 +17,8 @@ class FilamentSimplePagesPlugin implements Plugin
     public function register(Panel $panel): void
     {
         $panel
-            ->resources(config('filamentpages.resources')
-            ->pages(config('filamentpages.resources');
+            ->resources(config('filamentpages.resources'))
+            ->pages(config('filamentpages.resources'));
     }
     
     public function getPrefixSlug() : string
